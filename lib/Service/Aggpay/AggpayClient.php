@@ -40,6 +40,7 @@ class AggpayClient
             Model\AggAttachReportV10ResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\AggCloseOrderV10Request $request
      * @return Model\AggCloseOrderV10Response
@@ -54,6 +55,7 @@ class AggpayClient
             Model\AggCloseOrderV10ResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\AggReportQueryV10Request $request
      * @return Model\AggReportQueryV10Response
@@ -80,6 +82,7 @@ class AggpayClient
             Model\AggReportQueryV10ResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\AggReportUpdateV10Request $request
      * @return Model\AggReportUpdateV10Response
@@ -94,6 +97,7 @@ class AggpayClient
             Model\AggReportUpdateV10ResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CloseOrderRequest $request
      * @return Model\CloseOrderResponse
@@ -108,6 +112,7 @@ class AggpayClient
             Model\CloseOrderResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatDetailsRequest $request
      * @return Model\ComplaintWechatDetailsResponse
@@ -125,6 +130,7 @@ class AggpayClient
             Model\ComplaintWechatDetailsResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatDownloadPicRequest $request
      * @return Model\ComplaintWechatDownloadPicResponse
@@ -139,6 +145,7 @@ class AggpayClient
             Model\ComplaintWechatDownloadPicResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatFeedbackRequest $request
      * @return Model\ComplaintWechatFeedbackResponse
@@ -153,6 +160,7 @@ class AggpayClient
             Model\ComplaintWechatFeedbackResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatListRequest $request
      * @return Model\ComplaintWechatListResponse
@@ -173,6 +181,7 @@ class AggpayClient
             Model\ComplaintWechatListResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatNegotiationHistoryRequest $request
      * @return Model\ComplaintWechatNegotiationHistoryResponse
@@ -190,6 +199,7 @@ class AggpayClient
             Model\ComplaintWechatNegotiationHistoryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ComplaintWechatSuccessRequest $request
      * @return Model\ComplaintWechatSuccessResponse
@@ -204,6 +214,7 @@ class AggpayClient
             Model\ComplaintWechatSuccessResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScoreCancelRequest $request
      * @return Model\CreditScoreCancelResponse
@@ -218,6 +229,7 @@ class AggpayClient
             Model\CreditScoreCancelResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScoreCreateRequest $request
      * @return Model\CreditScoreCreateResponse
@@ -232,6 +244,7 @@ class AggpayClient
             Model\CreditScoreCreateResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScoreModifyRequest $request
      * @return Model\CreditScoreModifyResponse
@@ -246,6 +259,7 @@ class AggpayClient
             Model\CreditScoreModifyResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScoreQueryRequest $request
      * @return Model\CreditScoreQueryResponse
@@ -269,6 +283,7 @@ class AggpayClient
             Model\CreditScoreQueryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScoreSyncRequest $request
      * @return Model\CreditScoreSyncResponse
@@ -283,6 +298,7 @@ class AggpayClient
             Model\CreditScoreSyncResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\CreditScorecompleteRequest $request
      * @return Model\CreditScorecompleteResponse
@@ -297,99 +313,7 @@ class AggpayClient
             Model\CreditScorecompleteResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
-    /**
-     * @param Model\CreditscoreCancelRequest $request
-     * @return Model\CreditscoreCancelResponse
-     * @throws YopClientException
-     */
-    public function creditscoreCancel(Model\CreditscoreCancelRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreCancelRequestMarshaller::getInstance(),
-            Model\CreditscoreCancelResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
-    /**
-     * @param Model\CreditscoreCompleteRequest $request
-     * @return Model\CreditscoreCompleteResponse
-     * @throws YopClientException
-     */
-    public function creditscoreComplete(Model\CreditscoreCompleteRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreCompleteRequestMarshaller::getInstance(),
-            Model\CreditscoreCompleteResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
-    /**
-     * @param Model\CreditscoreCreateRequest $request
-     * @return Model\CreditscoreCreateResponse
-     * @throws YopClientException
-     */
-    public function creditscoreCreate(Model\CreditscoreCreateRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreCreateRequestMarshaller::getInstance(),
-            Model\CreditscoreCreateResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
-    /**
-     * @param Model\CreditscoreModifyRequest $request
-     * @return Model\CreditscoreModifyResponse
-     * @throws YopClientException
-     */
-    public function creditscoreModify(Model\CreditscoreModifyRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreModifyRequestMarshaller::getInstance(),
-            Model\CreditscoreModifyResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
-    /**
-     * @param Model\CreditscoreQueryRequest $request
-     * @return Model\CreditscoreQueryResponse
-     * @throws YopClientException
-     */
-    public function creditscoreQuery(Model\CreditscoreQueryRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        if ($request->getParentMerchantNo() == null) {
-            throw new YopClientException("request.parentMerchantNo is required.");
-        }
-        if ($request->getMerchantNo() == null) {
-            throw new YopClientException("request.merchantNo is required.");
-        }
-        if ($request->getCreditOrderId() == null) {
-            throw new YopClientException("request.creditOrderId is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreQueryRequestMarshaller::getInstance(),
-            Model\CreditscoreQueryResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
-    /**
-     * @param Model\CreditscoreSyncRequest $request
-     * @return Model\CreditscoreSyncResponse
-     * @throws YopClientException
-     */
-    public function creditscoreSync(Model\CreditscoreSyncRequest $request)
-    {
-        if ($request == null) {
-            throw new YopClientException("request is required.");
-        }
-        $clientExecutionParams = new ClientExecutionParams($request, Model\CreditscoreSyncRequestMarshaller::getInstance(),
-            Model\CreditscoreSyncResponseUnMarshaller::getInstance());
-        return $this->clientHandler->execute($clientExecutionParams);
-    }
+
     /**
      * @param Model\GetAuthInfoRequest $request
      * @return Model\GetAuthInfoResponse
@@ -428,6 +352,7 @@ class AggpayClient
             Model\GetAuthInfoResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\MiniprogramDetailsRequest $request
      * @return Model\MiniprogramDetailsResponse
@@ -442,6 +367,7 @@ class AggpayClient
             Model\MiniprogramDetailsResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\MiniprogramFeedbackRequest $request
      * @return Model\MiniprogramFeedbackResponse
@@ -456,6 +382,7 @@ class AggpayClient
             Model\MiniprogramFeedbackResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\MiniprogramNegotiationHistoryRequest $request
      * @return Model\MiniprogramNegotiationHistoryResponse
@@ -470,6 +397,7 @@ class AggpayClient
             Model\MiniprogramNegotiationHistoryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\PayRequest $request
      * @return Model\PayResponse
@@ -484,6 +412,7 @@ class AggpayClient
             Model\PayResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\PayLinkRequest $request
      * @return Model\PayLinkResponse
@@ -498,6 +427,7 @@ class AggpayClient
             Model\PayLinkResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\PrePayRequest $request
      * @return Model\PrePayResponse
@@ -512,6 +442,7 @@ class AggpayClient
             Model\PrePayResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\QueryComplaintNegotiationHistoryRequest $request
      * @return Model\QueryComplaintNegotiationHistoryResponse
@@ -526,6 +457,7 @@ class AggpayClient
             Model\QueryComplaintNegotiationHistoryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\QueryMiniProgramDetailRequest $request
      * @return Model\QueryMiniProgramDetailResponse
@@ -540,6 +472,7 @@ class AggpayClient
             Model\QueryMiniProgramDetailResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\QueryUseridRequest $request
      * @return Model\QueryUseridResponse
@@ -554,6 +487,7 @@ class AggpayClient
             Model\QueryUseridResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ReportAttachRequest $request
      * @return Model\ReportAttachResponse
@@ -568,6 +502,7 @@ class AggpayClient
             Model\ReportAttachResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ReportQueryRequest $request
      * @return Model\ReportQueryResponse
@@ -594,6 +529,7 @@ class AggpayClient
             Model\ReportQueryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ReportUpdateRequest $request
      * @return Model\ReportUpdateResponse
@@ -608,6 +544,7 @@ class AggpayClient
             Model\ReportUpdateResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ShareTokenGenerateRequest $request
      * @return Model\ShareTokenGenerateResponse
@@ -622,6 +559,7 @@ class AggpayClient
             Model\ShareTokenGenerateResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ShareTokenMarketQueryRequest $request
      * @return Model\ShareTokenMarketQueryResponse
@@ -651,6 +589,7 @@ class AggpayClient
             Model\ShareTokenMarketQueryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\SignRequest $request
      * @return Model\SignResponse
@@ -665,6 +604,7 @@ class AggpayClient
             Model\SignResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\SignQueryRequest $request
      * @return Model\SignQueryResponse
@@ -688,6 +628,7 @@ class AggpayClient
             Model\SignQueryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\TutelagePrePayRequest $request
      * @return Model\TutelagePrePayResponse
@@ -702,6 +643,7 @@ class AggpayClient
             Model\TutelagePrePayResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\UnsignRequest $request
      * @return Model\UnsignResponse
@@ -716,6 +658,7 @@ class AggpayClient
             Model\UnsignResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\ViolationWechatChannelRequest $request
      * @return Model\ViolationWechatChannelResponse
@@ -739,6 +682,7 @@ class AggpayClient
             Model\ViolationWechatChannelResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\WechatComplaintFeedbackRequest $request
      * @return Model\WechatComplaintFeedbackResponse
@@ -753,6 +697,7 @@ class AggpayClient
             Model\WechatComplaintFeedbackResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\WechatConfigAddRequest $request
      * @return Model\WechatConfigAddResponse
@@ -770,6 +715,7 @@ class AggpayClient
             Model\WechatConfigAddResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\WechatConfigAddV2Request $request
      * @return Model\WechatConfigAddV2Response
@@ -784,6 +730,7 @@ class AggpayClient
             Model\WechatConfigAddV2ResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\WechatConfigQueryRequest $request
      * @return Model\WechatConfigQueryResponse
@@ -804,6 +751,7 @@ class AggpayClient
             Model\WechatConfigQueryResponseUnMarshaller::getInstance());
         return $this->clientHandler->execute($clientExecutionParams);
     }
+
     /**
      * @param Model\WechatConfigQueryV2Request $request
      * @return Model\WechatConfigQueryV2Response
